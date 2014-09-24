@@ -17,10 +17,16 @@ handlers:
   static_dir: static/js
   application_readable: true
 
+- url: /images
+  static_dir: static/images
+  application_readable: true
+
 - url: /fonts
   static_dir: static/fonts
   application_readable: true
 
 - url: /.*
   script: _go_app
-  login: admin
+
+- url: /admin/.*
+  script: _go_app

@@ -1,0 +1,82 @@
+{{define "adminIndex"}}
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Glog Admin :: {{.Admin_email}}</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/blog-home.css" rel="stylesheet">
+
+    <link href="../css/admincss.css" rel="stylesheet">
+
+    <link href="../css/bootstrap-markdown.min.css" / rel="stylesheet">
+	
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div class="summernote container-fluid">
+	<div class="row">
+	<div class="col-xs-5 col-md-3 col-lg-3 vcenter">
+		<div class="list-group">
+		    <a href="#" class="list-group-item active">
+		        <span class="glyphicon glyphicon-pencil"></span> Write New </span>
+		    </a>
+		    <a href="#" class="list-group-item">
+		        <span class="glyphicon glyphicon-edit"></span> View / Edit <span class="badge">145</span>
+		    </a>
+		    <a href="#" class="list-group-item">
+		        <span class="glyphicon glyphicon-cog"></span> Settings </span>
+		    </a>
+		    <a href="{{.LogoutUrl}}" class="list-group-item">
+		        <span class="glyphicon glyphicon-off"></span> Logout </span>
+		    </a>
+		</div>
+
+	</div>
+	<div class="col-xs-5 col-md-7 col-lg-6 vcenter">
+		<form>
+			<div class="form-group">
+		     	<h4>Click inside the editor to start writing awesome!</h4>
+		    </div>
+		    <div class="form-group">
+		     	<input type="text" class="form-control" id="name" name="name" placeholder="Title">
+		    </div>
+		    <div class="form-group">
+		    	<textarea name="content" data-provide="markdown" rows="10"></textarea>
+		    </div>
+		    <hr/>
+			<div class="form-group">
+		    	<button type="submit" class="btn">Submit</button>
+		    </div>
+  			</form>
+	</div>
+	</div>
+</div>
+
+<script src="../js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-markdown.js"></script>
+</body>
+</html>
+{{end}}
