@@ -3,8 +3,11 @@ A lightweight blog platform written in go.
 It is a developer friendly (tech firendly) blog platform with
 
 1) Github widget
+
 2) Direct indentification of code blocks and changing them into proper markdown
+
 3) Markdown support
+
 4) Stackoverflow integration (Planned)
 
 And many more...
